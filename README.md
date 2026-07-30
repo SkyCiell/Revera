@@ -1,7 +1,5 @@
 # Revera — Audiophile Operating System & Workstation
 
-![Revera Banner](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfG9xYCRRX3Lm0xW4jiOJuN1NsnKTuOnGrm41LE5p_ayhg832cjdKE5Xu7&s=10)
-
 > **Revera** is a production-ready, professional audio workstation designed for audiophiles to discover, analyze, compare, collect, review, and equalize In-Ear Monitors (IEMs). Built with React 19, HTML5 Canvas, Web Audio API DSP sound engine, Express.js, and MySQL.
 
 ---
