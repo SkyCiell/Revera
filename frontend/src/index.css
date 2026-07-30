@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg: #F5F5F3;
+  --bg-secondary: #F0F1EC;
+  --surface: #FFFFFF;
+  --surface-secondary: #F8F8F6;
+  --surface-alt: #ECEDE8;
+
+  --primary: #2F5D50;
+  --primary-hover: #24483E;
+  --primary-active: #1C3932;
+
+  --accent: #9B7E46;
+  --accent-hover: #84693B;
+
+  --border: #D8DBD2;
+  --border-strong: #C7CBC0;
+  --divider: #E4E6DF;
+
+  --text-primary: #1B1B1B;
+  --text-secondary: #5E615C;
+  --text-muted: #8C9188;
+  --text-inverse: #FFFFFF;
+
+  --success: #3F7D58;
+  --warning: #D89C2B;
+  --danger: #D94A4A;
+  --info: #4A78A8;
+
+  --selection: rgba(47, 93, 80, 0.12);
+  --hover: rgba(47, 93, 80, 0.06);
+  --overlay: rgba(27, 27, 27, 0.35);
+  --shadow: rgba(0, 0, 0, 0.08);
+
+  --chart-bass: #1B1B1B;
+  --chart-mid: #2F5D50;
+  --chart-treble: #9B7E46;
+  --chart-neutral: #8C9188;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom industrial scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Precision Industrial Cards */
+.revera-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.revera-card:hover {
+  border-color: var(--border-strong);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Button Classes */
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--text-inverse);
+  font-weight: 700;
+  border-radius: 0.5rem;
+  transition: background-color 0.15s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-secondary {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.btn-secondary:hover {
+  border-color: var(--border-strong);
+  background-color: var(--surface-secondary);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: var(--text-secondary);
+  border-radius: 0.5rem;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.btn-ghost:hover {
+  background-color: var(--surface-alt);
+  color: var(--text-primary);
+}
+
+.btn-accent {
+  background-color: var(--accent);
+  color: var(--text-inverse);
+  font-weight: 700;
+  border-radius: 0.5rem;
+  transition: background-color 0.15s ease;
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-hover);
+}
+
+.btn-danger {
+  background-color: var(--danger);
+  color: var(--text-inverse);
+  font-weight: 700;
+  border-radius: 0.5rem;
+}
